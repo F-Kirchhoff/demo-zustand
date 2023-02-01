@@ -3,7 +3,7 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
 function createWithLocalStorage(config, localStorageKey) {
-  // to prevent a hydration error a initial dummy store needs to be used
+  // to prevent a hydration error an initial dummy store needs to be used
   // after hydration switch to the persisted store
   const useInitialStore = create(config);
   const usePersistedStore = create(persist(config, { name: localStorageKey }));

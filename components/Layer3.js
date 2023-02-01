@@ -1,11 +1,7 @@
 import styled from "styled-components";
 import Counter from "./Counter";
 
-export default function Layer3({
-  counter,
-  incrementCounter,
-  decrementCounter,
-}) {
+export default function Layer3() {
   return (
     <Wrapper>
       <h3>Layer 3</h3>
