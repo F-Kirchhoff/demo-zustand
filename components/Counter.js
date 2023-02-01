@@ -23,6 +23,7 @@ const CounterWrapper = styled.div`
   align-items: stretch;
   color: hsl(0 0% 0% / 0.8);
   overflow: hidden;
+  font-size: 1.5rem;
   button {
     flex-grow: 1;
     display: grid;
@@ -30,8 +31,8 @@ const CounterWrapper = styled.div`
     border: none;
     background-color: inherit;
     color: inherit;
+    font-size: inherit;
     cursor: pointer;
-    font-size: 1.2rem;
   }
   button:hover {
     filter: brightness(1.2);
