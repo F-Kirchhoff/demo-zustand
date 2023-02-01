@@ -1,6 +1,6 @@
-import { create } from "zustand";
+import createWithLocalStorage from "./createWithLocalStorage";
 
-const useStore = create((set) => {
+const useStore = createWithLocalStorage((set) => {
   console.log("inside config callback");
   return {
     counter: 0,
@@ -29,6 +29,6 @@ const useStore = create((set) => {
       });
     },
   };
-});
+}, "counter");
 
 export default useStore;
