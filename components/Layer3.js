@@ -9,11 +9,7 @@ export default function Layer3({
   return (
     <Wrapper>
       <h3>Layer 3</h3>
-      <Counter
-        counter={counter}
-        incrementCounter={incrementCounter}
-        decrementCounter={decrementCounter}
-      />
+      <Counter />
     </Wrapper>
   );
 }
