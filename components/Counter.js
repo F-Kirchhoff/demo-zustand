@@ -17,9 +17,9 @@ export default function Counter({
 const CounterWrapper = styled.div`
   min-height: 80px;
   display: flex;
-  border-radius: 7px;
-  border: 2px solid hsl(0 0% 0% / 0.8);
-  background-color: gray;
+  border-radius: 18px;
+  border: 2px solid hsl(0 0% 0% / 0.3);
+  background-color: lightgray;
   align-items: stretch;
   color: hsl(0 0% 0% / 0.8);
   overflow: hidden;
@@ -42,5 +42,7 @@ const CounterWrapper = styled.div`
     min-width: 80px;
     display: grid;
     place-items: center;
+    border-left: solid 2px hsl(0 0% 0% / 0.3);
+    border-right: solid 2px hsl(0 0% 0% / 0.3);
   }
 `;
