@@ -1,10 +1,10 @@
 import styled from "styled-components";
+import useStore from "../hooks/useStore";
 
-export default function Counter({
-  counter,
-  incrementCounter,
-  decrementCounter,
-}) {
+export default function Counter() {
+  const counter = useStore((state) => state.counter);
+  const incrementCounter = useStore((state) => state.incrementCounter);
+  const decrementCounter = useStore((state) => state.decrementCounter);
   return (
     <CounterWrapper>
       <button onClick={decrementCounter}>-</button>
